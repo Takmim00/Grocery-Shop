@@ -1,18 +1,16 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+import Marquee from "react-fast-marquee";
+
 import img1 from "../assets/baby-care.png";
 import img5 from "../assets/bakery.png";
 import img2 from "../assets/beverages.png";
 import img6 from "../assets/dairy.png";
 import img7 from "../assets/frozen-foods.png";
+import img11 from "../assets/fruits-vegetables.png";
 import img8 from "../assets/grocery.png";
+import img10 from "../assets/home-cleaning.png";
 import img3 from "../assets/meat-fish.png";
 import img4 from "../assets/organic.png";
 import img9 from "../assets/pet.png";
-import img10 from "../assets/home-cleaning.png";
-import img11 from "../assets/fruits-vegetables.png";
-
 
 const categories = [
   {
@@ -61,42 +59,25 @@ const categories = [
   },
 ];
 
-export default function CategoryCarousel() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000, 
-    pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 4 } },
-      { breakpoint: 768, settings: { slidesToShow: 3 } },
-      { breakpoint: 480, settings: { slidesToShow: 2 } },
-    ],
-  };
-
+export default function Category() {
   return (
     <div className="w-11/12 mx-auto  py-16">
-      <Slider {...settings}>
+      <Marquee pauseOnHover={true}>
         {categories.map((cat, index) => (
-          <div key={index} className="text-center">
-            <div className="flex justify-center">
+          <div key={index} className="text-center mx-2 ">
+            <div className="flex flex-col text-center gap-2 justify-center">
               <div className=" rounded-full flex items-center justify-center bg-gray-100 overflow-hidden">
                 <img
                   src={cat.img}
                   alt={cat.title}
-                  className="object-cover w-40"
+                  className="object-cover w-36"
                 />
               </div>
+              <div className="mt-2 font-semibold">{cat.title}</div>
             </div>
-            <p className="mt-2 font-semibold">{cat.title}</p>
           </div>
         ))}
-      </Slider>
+      </Marquee>
     </div>
   );
 }
