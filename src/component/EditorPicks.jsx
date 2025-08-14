@@ -273,7 +273,7 @@ export default function EditorsPickGrid() {
         {/* Column 4 - Two stacked cards */}
         <div className="grid grid-rows-2 ">
           {/* Card 1 */}
-          <div className="bg-white border p-4 shadow-sm relative ">
+          <div className="bg-white border p-4 rounded-tr-lg shadow-sm relative ">
             <div className="flex gap-4">
               <div>
                 <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded">
@@ -319,7 +319,7 @@ export default function EditorsPickGrid() {
             </div>
 
             {/* Countdown */}
-            <div className="flex items-center gap-2 justify-center mt-3">
+            <div className="flex items-center gap-2 justify-center  mt-3">
               <div className="flex gap-1">
                 {["90", "04", "02", "45"].map((t, i) => (
                   <div
@@ -337,7 +337,7 @@ export default function EditorsPickGrid() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white border p-4 shadow-sm relative ">
+          <div className="bg-white border p-4 shadow-sm relative rounded-br-lg">
             <div className="flex gap-4">
               <div>
                 <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded">
