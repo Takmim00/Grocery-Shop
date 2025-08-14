@@ -18,7 +18,7 @@ export default function Navbar() {
       {/* Top Navbar */}
       <div className="flex items-center justify-between w-11/12 mx-auto py-3">
         <div className="flex items-center gap-4 flex-shrink-0">
-          <Link to='/'>
+          <Link to="/">
             <img src={logo} alt="Grogin Logo" className="h-8" />
           </Link>
 
@@ -39,10 +39,13 @@ export default function Navbar() {
 
         {/* Right  */}
         <div className="flex items-center gap-6 flex-shrink-0">
-          <div className="flex items-center gap-1 cursor-pointer">
-            <FaUser className="text-xl" />
-            <span>Account</span>
-          </div>
+          <Link to="/login">
+            <div className="flex items-center gap-1 cursor-pointer">
+              <FaUser className="text-xl" />
+              <span>Account</span>
+            </div>
+          </Link>
+
           <div className="relative flex items-center gap-1 cursor-pointer">
             <FaHeart className="text-xl" />
             <span>Wishlist</span>

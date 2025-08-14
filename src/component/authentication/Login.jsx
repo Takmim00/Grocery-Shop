@@ -74,7 +74,7 @@ const Login = () => {
         <div className="flex items-center justify-between mt-4">
           <div className="font-semibold text-sm text-slate-500 text-left">
             Don't have an account?{" "}
-            <Link to="/signup" className="text-red-600 underline">
+            <Link to="/signup" className="text-purple-800 underline">
               Register
             </Link>
           </div>

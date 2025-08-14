@@ -105,9 +105,9 @@ const Signup = () => {
             Sign Up
           </button>
         </form>
-        <p className="text-sm text-gray-700 mt-4">
+        <p className="font-semibold text-sm text-slate-500 text-left mt-4">
           Already have an account?{" "}
-          <Link to="/login" className="text-custom-blue hover:underline">
+          <Link to="/login" className="text-purple-800 hover:underline">
             Login here
           </Link>
         </p>
