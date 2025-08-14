@@ -12,7 +12,7 @@ const Login = () => {
             Sign in below to access your account
           </p>
         </div>
-        <form  className="mt-8 space-y-6">
+        <form className="mt-8 space-y-6">
           <div>
             <label
               htmlFor="email"
