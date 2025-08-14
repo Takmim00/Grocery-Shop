@@ -57,7 +57,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
+<hr />
       {/* Bottom Navbar */}
       <div className="flex items-center gap-6 w-11/12 mx-auto py-2 text-lg font-medium relative">
         <div className="cursor-pointer">Home</div>
