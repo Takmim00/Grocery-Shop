@@ -7,6 +7,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
@@ -16,9 +17,10 @@ export default function Navbar() {
     <div className="border-b relative">
       {/* Top Navbar */}
       <div className="flex items-center justify-between w-11/12 mx-auto py-3">
-        
         <div className="flex items-center gap-4 flex-shrink-0">
-          <img src={logo} alt="Grogin Logo" className="h-8" />
+          <Link to='/'>
+            <img src={logo} alt="Grogin Logo" className="h-8" />
+          </Link>
 
           <button className="flex items-center gap-2 bg-purple-100 px-4 py-3 rounded-md text-purple-700 font-medium">
             <FaBars /> Categories
@@ -57,7 +59,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-<hr />
+      <hr />
       {/* Bottom Navbar */}
       <div className="flex items-center gap-6 w-11/12 mx-auto py-2 text-lg font-medium relative">
         <div className="cursor-pointer">Home</div>
