@@ -9,7 +9,7 @@ import paypal from "../assets/paypal.svg";
 import visa from "../assets/visa.svg";
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 text-gray-800">
+    <footer className="bg-[#F3F4F6] text-gray-800">
       <div className="w-11/12 mx-auto px-6 py-10 border-b border-gray-200">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
