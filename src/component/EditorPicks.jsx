@@ -25,8 +25,8 @@ export default function EditorsPickGrid() {
       <section className="py-16 w-11/12 mx-auto ">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold">Editor’s Pick</h2>
-          <span className="text-gray-500">
+          <h2 className="text-2xl font-semibold pr-4">Editor’s Pick</h2>
+          <span className="text-gray-500 text-sm">
             New products with updated stocks.
           </span>
           <button className="ml-auto btn text-sm bg-white py-2 px-4 rounded-full border  hover:bg-gray-100">
