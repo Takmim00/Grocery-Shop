@@ -7,7 +7,7 @@ import pizza from "../assets/pizza.jpg";
 import rising from "../assets/rising.jpg";
 import paper from "../assets/toilet.jpg";
 
-const RatingStars = ({ rating }) => {
+export const RatingStars = ({ rating }) => {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     if (rating >= i)
